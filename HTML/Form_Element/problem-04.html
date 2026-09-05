@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Leave Request Form</title>
+</head>
+<body>
+    <h1>Employee Leave Form</h1>
+    <p>Employee Can Use this Form to submit a leave request. Please provide the required details and submit the form for approval.</p>
+
+    <hr>
+    <h2>Leave Categories</h2>
+    <table border="1">
+        <tr>
+            <th>Leave Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>casual Leave</td>
+            <td>Short Leave for Personal work or emergencies.</td>
+        </tr>
+        <tr>
+            <td>Sick Leave</td>
+            <td>Short leave for personal work or emergencies.</td>
+        </tr>
+        <tr>
+            <td>Earned Leave</td>
+            <td>Paid leave earned by an employee.</td>
+        </tr>
+        <tr>
+            <td>Work from Home</td>
+            <td>Permission to work remotely form home.</td>
+        </tr>
+        <tr>
+            <td>Other</td>
+            <td>any other type of leave request.</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>apply for Leave</h2>
+    <form>
+        <h2>Employee Details</h2>
+
+        <label for="name">Employee Name</label>
+        <input type="text" name="name" minlength="3" maxlength="50" placeholder="Enter Your Name Name"><br><br>
+
+        <label for="Id">Employee_ID</label>
+        <input type="text" name="Id" minlength="7" maxlength="7" placeholder="EM123445"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="abc@gmail.com">
+
+        <label for="department">Department</label>
+        <select name="department" id=""></select>
+
+    </form>
+</body>
+</html>

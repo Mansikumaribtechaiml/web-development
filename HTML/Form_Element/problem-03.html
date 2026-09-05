@@ -2,58 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Employee Leave Request Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
 </head>
 <body>
-    <h1>Employee Leave Form</h1>
-    <p>Employee Can Use this Form to submit a leave request. Please provide the required details and submit the form for approval.</p>
+    <h1>Online Course Enrollment & Student Registration Form</h1>
+    <p>Welcome to our online course enrollment and student registration portal. Please fill in the required details carefully before submitting your application.</p>
+    <p>Fill out the form below to complete your registration.</p>
 
     <hr>
-    <h2>Leave Categories</h2>
-    <table border="1">
-        <tr>
-            <th>Leave Type</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>casual Leave</td>
-            <td>Short Leave for Personal work or emergencies.</td>
-        </tr>
-        <tr>
-            <td>Sick Leave</td>
-            <td>Short leave for personal work or emergencies.</td>
-        </tr>
-        <tr>
-            <td>Earned Leave</td>
-            <td>Paid leave earned by an employee.</td>
-        </tr>
-        <tr>
-            <td>Work from Home</td>
-            <td>Permission to work remotely form home.</td>
-        </tr>
-        <tr>
-            <td>Other</td>
-            <td>any other type of leave request.</td>
-        </tr>
-    </table>
-
-    <hr>
-    <h2>apply for Leave</h2>
+    <h2>Student Registration Form</h2>
     <form>
-        <h2>Employee Details</h2>
-
-        <label for="name">Employee Name</label>
-        <input type="text" name="name" minlength="3" maxlength="50" placeholder="Enter Your Name Name"><br><br>
-
-        <label for="Id">Employee_ID</label>
-        <input type="text" name="Id" minlength="7" maxlength="7" placeholder="EM123445"><br><br>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" placeholder="Enter Your Name"><br><br>
 
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="abc@gmail.com">
+        <input type="email" name="email" placeholder="abc@example.com"><br><br>
 
-        <label for="department">Department</label>
-        <select name="rfc" id=""></select>
+        <label for="Password">Password</label>
+        <input type="password" name="Password" placeholder="Enter Your Password"><br><br>
 
+        <label for="phone">Mobile Number</label>
+        <input type="tel" name="phone" placeholder="+91 123456789"><br><br>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" max="2005-12-31" min="1900-01-01"><br><br>
+
+    </form>
+
+    <hr>
+    <h2>Course Details</h2>
+    <form>
+        <label for="course">Select Course</label>
+        <select name="course">
+            <option>Java Programming</option>
+            <option>Python Programming</option>
+            <option>Web Development</option>
+            <option>Data Science</option>
+            <option>Artificial Intelligence</option>
+            <option>Database Management</option>
+            <option>C++ Programming</option>
+        </select><br><br>
+
+        <label for="batch">Batch/Session</label>
+        <select name="batch">
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+        </select><br><br>
+
+        <label for="interests">Areas of Interest</label><br>
+        <input type="checkbox" name="interests" value="JAVA">Java Programming<br>
+        <input type="checkbox" name="interests" value="python">Python Programming<br>
+        <input type="checkbox" name="interests" value="data structure">Data Structures<br>
+        <input type="checkbox" name="interests" value="database">Database Management<br><br>
+
+        <hr>
+        <h2>Educational Background</h2>
+
+        <label for="qualification">Educational Level</label>
+        <select name="qualification">
+            <option>High School</option>
+            <option>Diploma</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's Degree</option>
+            <option>PhD</option>
+        </select><br><br>
+
+        <label for="College">College/University Name</label>
+        <input type="text" name="College" placeholder="Enter College/University Name"><br><br>
+
+        <label for="semester">Current Semester/Year</label>
+        <input type="number" name="semester" min="1" max="8"><br><br>
+
+        <hr>
+        <h2>Additional Information</h2>
+
+        <label for="github">GitHub/Portfolio URL</label>
+        <input type="url" name="github" placeholder="https://github.com/username"><br><br>
+
+        <label for="goals">Learning Goals</label><br>
+        <textarea name="goals" placeholder="Describe your learning goals..."></textarea><br><br>
+
+        <input type="checkbox" name="confirm" required> I confirm that the information provided is accurate and complete.<br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Form"><br> 
     </form>
 </body>
 </html>

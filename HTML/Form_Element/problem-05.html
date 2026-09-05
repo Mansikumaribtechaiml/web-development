@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <h1>Checkout Page</h1>
+    <p>Welcome to our online store! Please review your order and provide the necessary information to complete your purchase. we value your business and look forward to serving you. Please fill out the form below to proceed with the checkout process.</p>
+
+    <hr>
+    <h2>Selected Products</h2>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Wireless Headphones</td>
+            <td>1</td>
+            <td>2,999</td>
+        </tr>
+        <tr>
+            <td>Smart Watch</td>
+            <td>1</td>
+            <td>4,499</td>
+        </tr>
+        <tr>
+            <td>Phone Cover</td>
+            <td>2</td>
+            <td>499</td>
+        </tr>
+    
+    <h2>Customer Information</h2>
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" placeholder="Enter Your Name"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="abc@example.com"><br><br>
+
+        <label for="phone-no">Phone Number</label>
+        <input type="tel" name="phone-no" placeholder="+91 123456789"><br><br>
+
+        <h2>Shipping Address</h2>
+        <label for="House/Street">House/Street:</label>
+        <input type="text" name="House/Street" placeholder="Enter Your House/Street"><br><br>
+
+        <label for="City">City:</label>
+        <input type="text" name="City" placeholder="Enter Your City"><br><br>
+
+        <label for="State">State:</label>
+        <select name="State">
+            <option>Uttar Pradesh</option>
+            <option>Delhi</option>
+            <option>Maharashtra</option>
+            <option>Karnataka</option>
+            <option>Tamil Nadu</option>
+        </select><br><br>
+
+        <label for="Zip Code">Zip Code:</label>
+        <input type="text" name="Zip Code" placeholder="Enter Your Zip Code"><br><br>
+
+        <label for="Country">Country:</label>
+        <select name="Country">
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+        </select><br><br>
+
+        <h2>Payment Method</h2>
+        <label for="Payment Method">Payment Method:</label>
+        <select name="Payment Method">
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>Net Banking</option>
+            <option>PayPal</option>
+        </select><br><br>
+
+        <h3>card Details</h3>
+        <label for="Card holder">Card Holder Name:</label>
+        <input type="text" name="Card holder" placeholder="Enter Card Holder Name"><br><br>
+
+        <label for="Card Number">Card Number:</label>
+        <input type="text" name="Card Number" placeholder="Enter Card Number"><br><br>
+
+        <label for="Expiry Date">Expiry Date:</label>
+        <input type="month" name="Expiry Date"><br><br>
+
+        <label for="CVV">Security CVV:</label>
+        <input type="text" name="CVV" placeholder="Enter CVV"><br><br>
+    </form>
+
+    <h2>Additional Information</h2>
+    <input type="checkbox" name="newsletter">Billing address is same as shipping address.<br><br>
+    <input type="checkbox" name="terms">I agree to the terms and conditions.<br><br>
+    <button type="submit">Place Order</button>
+    <button type="reset">Reset Form</button><br><br>
+    <button type="button">Continue Shopping</button>
+</body>
+</html>
