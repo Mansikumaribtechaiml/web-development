@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+       .coach,.programme{
+            display: flex;
+            margin-bottom: 50px;
+       }
+
+       .coach div{
+            margin: 20px;
+            padding: 20px;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            text-align: left;
+       }
+
+       .coach div h2{
+            line-height: 70px;
+       }
+
+       .programme{
+            justify-content: space-evenly;
+            align-items: center;
+            height: 200px;
+       }
+
+       .programme div{
+            justify-content: space-evenly;
+       }
+
+       button{
+        padding: 10px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        color: white;
+       }
+
+       .programme div h2{
+            color: red;
+       }
+
+
+    </style>
 </head>
 <body>
-    
+    <h1>Why Coach?</h1>
+    <div class="coach">
+        <div>
+            <h2>Invest In People</h2>
+            <p>Give back to the tech community and help new developers launch their careers, prepare for jobs, and grow.</p>
+        </div>
+        <div>
+            <h2>Recruit Talent</h2>
+            <p>Be the first to mentor talented students nd help them become high quality candidates for your company or industry.</p>
+        </div>
+    </div>
+    <h1>How To Join Industry Mentor Programme</h1>
+    <p>All Masai School students will have the opportunity to work with an industry Mentor in the last 12 weeks of their course.</p>
+    <div class="programme">
+        <div>
+            <h2>A</h2>
+            <p>Apply to our Industry Mentor Programme<br>
+            to get started. Let us know why you want<br>
+            to join us and how you can help our<br>
+            studentss</p>
+        </div>
+        <div>
+            <h2>P</h2>
+            <p>Choose the course you want to Mentor.</p>
+        </div>
+        <div>
+            <h2>D</h2>
+            <p>Meet Masai students once per week for 45-<br>
+                60 mins virtually.</p>
+        </div>
+    </div>
+    <button>APPLY TO BECOME A MENTOR</button>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: "nav nav nav"
+                                 "lbox lbox rbox1"
+                                 "lbox lbox rbox2"
+                                 "lbox lbox rbox3";
+            gap: 10px;
+            height: 100vh;
+        }
+        #container .nav {
+            grid-area: nav;
+            background-color: rgb(253, 241, 83);
+        }
+        #container .lbox {
+            grid-area: lbox;
+            background-color: rgb(250, 59, 49);
+        }
+        #container .rbox:nth-child(3) {
+            grid-area: rbox1;
+            background-color: rgb(2, 143, 105);
+        }
+        #container .rbox:nth-child(4) {
+            grid-area: rbox2;
+            background-color: rgb(2, 143, 105);
+        }
+        #container .rbox:nth-child(5) {
+            grid-area: rbox3;
+            background-color: rgb(2, 143, 105);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="nav">Navigation</div>
+        <div class="lbox">Left box</div>
+        <div class="rbox">Right box 1</div>
+        <div class="rbox">Right box 2</div>
+        <div class="rbox">Right box 3</div>
+    </div>
+</body>
+</html>

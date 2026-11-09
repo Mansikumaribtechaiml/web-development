@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "box1 box2 box2 box3"
+                                 "box4 box4 box5 box6"
+                                 "box7 box8 box9 box9";
+            gap: 10px;
+            width: 500px;
+            height: 300px;
+        }
+
+        #container .item:nth-child(1) {
+            grid-area: box1;
+        }
+        #container .item:nth-child(2) {
+            grid-area: box2;
+        }
+        #container .item:nth-child(3) {
+            grid-area: box3;
+        }
+        #container .item:nth-child(4) {
+            grid-area: box4;
+        }
+        #container .item:nth-child(5) {
+            grid-area: box5;
+        }
+        #container .item:nth-child(6) {
+            grid-area: box6;
+        }
+        #container .item:nth-child(7) {
+            grid-area: box7;
+        }
+        #container .item:nth-child(8) {
+            grid-area: box8;
+        }
+        #container .item:nth-child(9) {
+            grid-area: box9;
+        }
+
+        .item {
+            background-color: rgb(2, 143, 105);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main,header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        main{
+            height:400px;
+            padding: 60px;
+        }
+
+        h2{
+            padding: 10px;
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        li{
+            display: inline;
+            margin: 15px;
+        }
+
+        #box1,#box2{
+            height: 400px;
+            width: 45%;
+        }
+
+        #box2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        #box2 div{
+            height: 45%;
+            width: 40%;
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        #box div img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>StudyLab</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Coures</li>
+                <li>Instructor</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+    </header>
+    <main>
+        <div id="box1">
+            <h6>WELCOME TO STUDYLAB</h6>
+            <h1>We Are StudyLab An Online<br>
+            Learning center</h1>
+            <br>
+            <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.<br>
+                <br>
+                Far far away, behind the word mountains, for from the 
+                countries Vokalla and Consonantia, there live the blind texts.
+                Separated they live in Bookmarksgrave right at the coast of the 
+                Semantics a large language ocean.<br>
+                <div>
+                    <img src="" alt="">
+                    <p>Learn anything from StudyLab, Watch video</p>
+                </div>
+            </p>
+        </div>
+        <div id="box2">
+            <div>
+                <img src="" alt="">
+                <h3>Top Quality Content</h3>
+                <p>A small river named<br>
+                Duden flows By their<br>
+                place and supplies.</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Highly Skilled Instructor</h3>
+                <p>A small river named<br>
+                Duden flows By their<br>
+                place and supplies.</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>World Class & Quiz</h3>
+                <p>A small river named<br>
+                Duden flows By their<br>
+                place and supplies.</p>
+            </div>
+            <div><img src="" alt="">
+                <h3>Get Certified</h3>
+                <p>A small river named<br>
+                Duden flows By their<br>
+                place and supplies.</p></div>
+        </div>
+    </main>
+    
+</body>
+</html>

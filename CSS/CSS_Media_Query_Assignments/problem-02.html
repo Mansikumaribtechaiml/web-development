@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px 15px;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(185, 122, 3);
+    margin-bottom: 15px;
+}
+
+#rooms {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.room {
+    box-shadow: 0 0 10px grey;
+    padding: 10px;
+    width: 320px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.room h2 {
+    margin: 12px 0;
+}
+
+.rent {
+    color: #b77900;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .room {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Rooms & Suits</h1>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and consonantia, there<br>
+    live the blind taxts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a<br>
+    large language ocean.</p>
+    <div id="rooms">
+        <div class="room">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.eGqU-wv1DvZUCbLLkCo7dgHaEw?r=0&pid=Api&h=220&P=0" alt="">
+            <h2>Single Room</h2>
+            <p class="rent">90$ / PER NIGHT</p>
+        </div>
+
+        <div class="room">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.yNU-eOFX3bRuXDfgURVLPAHaEK?r=0&pid=Api&h=220&P=0" alt="">
+            <h2>Family Room</h2>
+            <p class="rent">120$ / PER NIGHT</p>
+        </div>
+
+        <div class="room">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.t-t74AAe3OBiMTiNrTscGQHaE8?r=0&pid=Api&h=220&P=0" alt="">
+            <h2>Presidential Room</h2>
+            <p class="rent">250$ / PER NIGHT</p>
+        </div>
+    </div>
+</body>
+</html>

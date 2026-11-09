@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: "display display display display"
+                                 "buttons buttons buttons buttons"
+                                 "buttons buttons buttons buttons"
+                                 "buttons buttons buttons buttons"
+                                 "buttons buttons buttons buttons";
+            gap: 10px;
+            width: 300px;
+            height: 400px;
+            box-shadow: 0px 0px 10px rgb(115, 116, 115);
+            padding: 50px;
+        }
+
+        
+        .buttons:nth-child(5),
+        .buttons:nth-child(9),
+        .buttons:nth-child(13),
+        .buttons:nth-child(16),
+        .buttons:nth-child(17) {
+            background-color: black;
+            color: white;
+        }
+
+        .buttons:nth-child(14) {
+            background-color: red;
+            color: white;
+        }
+
+
+        .display {
+            grid-column: span 4;
+            box-shadow: 0px 0px 5px rgb(115, 116, 115);
+            border-radius: 10px;
+        }
+
+        .buttons {
+            box-shadow: 0px 0px 5px rgb(115, 116, 115);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+</head>
+<body>
+    <div id="calculator">
+        <div class="display"></div>
+        <div class="buttons">1</div>
+        <div class="buttons">2</div>
+        <div class="buttons">3</div>
+        <div class="buttons">+</div>
+        <div class="buttons">4</div>
+        <div class="buttons">5</div>
+        <div class="buttons">6</div>
+        <div class="buttons">-</div>
+        <div class="buttons">7</div>
+        <div class="buttons">8</div>
+        <div class="buttons">9</div>
+        <div class="buttons">x</div>
+        <div class="buttons">C</div>
+        <div class="buttons">0</div>
+        <div class="buttons">=</div>
+        <div class="buttons">/</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body,#box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo,.cards{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 40px;
+        }
+
+        img{
+            height: 100px;
+            width: 200px;
+        }
+
+        h1{
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #box{
+            height: 550px;
+            width: 90%;
+            background-color: rgb(202, 237, 237);
+        }
+        
+        .card{
+            height: 300px;
+            padding: 15px;
+            background-color: aliceblue;
+        }
+
+        h4{
+            color: blue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button{
+            margin: 300px;
+            border: 1px solid red;
+            color: red;
+            padding: 7px;
+            border-radius: 5px;
+            height: 40px;
+            width: 100px;
+        }
+
+        .logo div,.cards div{
+            box-shadow: 0px 0px 5px rgb(161, 161, 161);
+            border-radius: 5px;
+            width: 260px;
+            display: flex;
+        }
+
+        .cards div{
+            flex-direction: column;
+            
+        }
+
+        .logo div{
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>GLA In The News</h1>
+        <div class="cards">
+        <div class="card">
+            <img src="https://www.alphacapital.in/api/assets/media/1681728777the-economic-times-logo.png" alt="">
+            <h4>21 Dec 2021</h4><br>
+            <h3>Edtech startup GLA University <br>
+            acquires dat analytics firm <br>
+            Prepleaf for $1 million.</h3>
+            <br>
+            <p>With their latest acquistion GLA<br>
+                University moves one step closer to<br>
+                becoming.
+            </p>
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.TteFzBH8aXlBgp8RtNN54AHaCq?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            <h4>26 Oct 2021</h4><br>
+            <h3>Kunal Shah, Vijay Shekhar<br>
+            Sharma, Amrish Rau among 21<br>
+            angel investors in GLA University</h3>
+            <br>
+            <p>GLA University is aiming to expand to<br>
+            smallr=er cities by March 2022 and...</p>
+        </div>
+        <div class="card">
+            <img src="https://www.solvezy.com/static/49adfe09ee1dc26b3f444ac8f29befad/46604/vcCircle.png" alt="">
+            <h4>18 Aug 2020</h4><br>
+            <h3>Unitus Ventures leads pre-<br>
+            Series A funding for coding-<br>
+            focussed GLA University</h3>
+            <br>
+            <p>Software coding platform GLA<br>
+            University has raised $2.5 million<br>
+            (Rs 18.6 crore) in...</p>
+        </div>
+        </div>
+        <button>SEE MORE ></button>
+    </div>
+    <h1>Our Investors, Who Believe In Us</h1>
+    <div class="logo">
+        <div>
+            <img src="https://a.mailmunch.co/user_data/landing_pages/1525150142831-Unitus%20FInal%20Logo.png" alt="">
+        </div>
+        <div>
+            <img src="https://groupaya.net/wp-content/uploads/2023/09/omidyar-1-scaled.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://static.startuptalky.com/2020/09/India-Quotient-logo_Startuptalky.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
